@@ -11,7 +11,8 @@ LIBS_PATH="${SDK_ROOT}/lib/${ARCH}"
 BIN_PATH="${SDK_ROOT}/bin/${ARCH}"
 
 chmod +x ${LIBS_PATH}/*
-cp ${LIBS_PATH}/* /usr/lib/
+cp -d ${LIBS_PATH}/* /usr/lib/
 
 chmod +x $BIN_PATH/*
-cp ${BIN_PATH}/* /usr/bin/
+cp -d ${BIN_PATH}/* /usr/bin/
+rm -f /usr/bin/libndi.so*
