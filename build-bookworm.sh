@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # build obs-ndi
+export QT_VERSION=5
 .github/scripts/build-linux
 
 # package libndi deb
